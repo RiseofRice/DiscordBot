@@ -1,0 +1,12 @@
+{
+  "name": "DiscordBot",
+  "version": "0.1",
+  "description": "DiscordBot",
+  "main": "main.js",
+  "repository": "https://github.com/RiseofRice/DiscordBot.git",
+  "author": "RiseofRice <xthekay@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
