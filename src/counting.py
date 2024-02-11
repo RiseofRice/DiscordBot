@@ -1,29 +1,19 @@
-def counting(n):
+def counting_loop(n):
     #returns n number to inputparsing
     
     while True:
-        n+=1
-        inputparsing(n)
-   
-   
-   
-def inputparsing(n):
-    # Compares input with returnvalue
-    if n <= 1:
-        zahl=int(input("fang an zu zählen:"))
-    else:
-        zahl=int(input("zähl weiter: "))
-    if zahl == n:
-        right(zahl)
-    else:
-        Wrong()
+        try:
+            zahl = int(input())
+            if zahl == n:
+                print("richtig")
+                n = n+1 
+            else:
+                print("Restart")
+                n=0
+                #bot posts a sad gif
+        except ValueError:
+            print("Nur nummern ")
+        
 
-def Wrong():
-    print("Restart")
-    # Bot postet ein sad gif 
-    counting(0)
 
-def right(zahl):
-    counting(zahl)
-
-counting(0)
+counting_loop(1)
